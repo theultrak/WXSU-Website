@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+.divider {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: red;
+  opacity: 0.5;
+}
+header {
+  font-family: sans-serif;
+}
+.banner-container {
+  padding-top: 2%;
+  text-align: center;
+}
+.banner {
+  padding-bottom: 2%;
+  width: 80%;
+  height: auto;
+}
+.page-title {
+  padding-top: 50px;
+  color: gold;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.call-title {
+  text-align: center;
+  padding-top: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cstrFreePlayerDiv {
+  width: 100%;
+}
+.slideshow {
+  width: 100%;
+}
+.dj-flyer {
+  width: 100%;
+}
+/* navbar styles */
+/* nav styles */
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: gold;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkred;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.8rem;
+  padding-left: 20px;
+}
+.WXSU-logo {
+  padding-top: 5px;
+  height: 45px;
+  width: auto;
+}
+.logo-image {
+  width: 60%;
+  height: auto;
+}
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: gold;
+}
+.hamburger:hover .line {
+  background-color: khaki;
+}
+.nav__link {
+  position: fixed;
+  width: 94%;
+  top: 4.3rem;
+  left: 3%;
+  background-color: darkred;
+}
+
+.nav-box {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  color: gold;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-box:hover {
+  background-color: rgb(177, 9, 9);
+  color: wheat;
+}
+
+.hide {
+  display: none;
+}
+.listen-now {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  text-align: center;
+  padding-top: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: white;
+}
+.flex-container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.flex-item {
+  padding-top: 5%;
+  text-align: center;
+  width: 30%;
+}
+.flex-requests {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.request {
+  background-color: goldenrod;
+  border-color: gold;
+  height: 80%;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+.calender-container {
+  color: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.calender-title {
+  font-size: 2.4rem;
+  padding-bottom: 1%;
+}
+.calender {
+  width: 80%;
+  height: 700px;
+  border: solid 1px #777;
+}
+.bumper {
+  padding-top: 5%;
+}
+.caption-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+}
+.form {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.social {
+  width: 10%;
+}
+.social-media {
+  font-size: 2.2rem;
+}
+.fb {
+  width: 100%;
+  height: 100%;
+}
+.contact-us {
+  color: white;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: white;
+}
+.flex-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.footer-item {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 30%;
+}
+/* Desktop Design */
+@media screen and (min-width: 1200px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav-box {
+    display: inline-block;
+    padding: 20px 15px;
+    height: default;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1447px) {
+  .mobile {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .flex-item {
+    width: 45%;
+  }
+  .page-title {
+    padding-top: 70px;
+  }
+}
+/* mobile view  and half windows*/
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .title {
+    font-size: 1.3rem;
+  }
+  .page-title {
+    font-size: 2.5rem;
+  }
+  .banner {
+    width: 95%;
+  }
+  .call-title {
+    font-size: 2rem;
+  }
+  .request {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .flex-item {
+    width: 75%;
+  }
+  .contact-us {
+    font-size: 1.25rem;
+  }
+  .footer-item {
+    width: 100%;
+  }
+  .calender {
+    width: 95%;
+    height: 400px;
+    border: solid 1px #777;
+  }
+}
+@media screen and (max-width: 406px) {
+  #cstrFreePlayerDiv {
+    width: 300px;
+    margin-left: -40px;
+    /* stop it from glitching on mobile */
+  }
+  .insta {
+    margin-left: -50px;
+    /* stop it from glitching on mobile */
+  }
+  .fb {
+    height: 200px;
+  }
+}
