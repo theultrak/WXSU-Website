@@ -204,8 +204,24 @@ header {
 .social {
   width: 10%;
 }
+.check {
+  width: 30%;
+}
+.social:hover {
+  opacity: 0.5;
+  /* background-color: beige; */
+}
 .social-media {
   font-size: 2.2rem;
+}
+.snap {
+  font-size: 1.8rem;
+}
+.link:link {
+  color: lightskyblue;
+}
+.link:hover {
+  color: blue;
 }
 .fb {
   width: 100%;
@@ -288,7 +304,7 @@ footer {
     font-size: 2rem;
   }
   .request {
-    width: 100%;
+    width: 80%;
     font-size: 1.5rem;
   }
   .flex-item {
