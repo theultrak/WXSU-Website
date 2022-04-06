@@ -19,7 +19,7 @@ header {
   font-family: sans-serif;
 }
 .banner-container {
-  padding-top: 2%;
+  padding-top: 5%;
   text-align: center;
 }
 .banner {
@@ -276,6 +276,9 @@ footer {
   }
   .banner {
     width: 95%;
+  }
+  .banner-container {
+    padding-top: 18%;
   }
   .call-title {
     font-size: 2rem;
