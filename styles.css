@@ -198,6 +198,8 @@ header {
   font-size: 1.4rem;
 }
 .form {
+  text-align: center;
+  color: white;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -298,10 +300,13 @@ footer {
     width: 95%;
   }
   .banner-container {
-    padding-top: 18%;
+    padding-top: 100px;
   }
   .call-title {
     font-size: 2rem;
+  }
+  .form {
+    font-size: 1.5rem;
   }
   .request {
     width: 80%;
