@@ -1,8 +1,9 @@
-/* This site was developed for Salisbury' WXSU Student run radio club by Jeremy Scheuerman
+/* This site was developed for Salisbury's WXSU Student run radio club by Jeremy Scheuerman
 If you have questions about the source code of the site, or want to checkout my other work
- and my Resume, Linkedin etc visit my portfolio here to find my work and contact information
- https://jerserver5712.ddns.net/personal-site/ 
+please visit my portfolio here to find my work and contact information
+https://jeremy-scheuerman-portfolio.helix5712.com/
  */
+/* GENERAL STYLES */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +12,17 @@ If you have questions about the source code of the site, or want to checkout my 
 body {
   background-color: black;
 }
+header {
+  font-family: sans-serif;
+}
+footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: white;
+}
+/* UTILITIES */
 .divider {
   margin-left: auto;
   margin-right: auto;
@@ -20,9 +32,56 @@ body {
   background-color: red;
   opacity: 0.5;
 }
-header {
-  font-family: sans-serif;
+.flex-container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 2%;
+  margin-right: 2%;
 }
+.flex-item {
+  padding-top: 5%;
+  text-align: center;
+  width: 30%;
+}
+.flex-requests {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.request {
+  background-color: goldenrod;
+  border-color: gold;
+  height: 80%;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+.request:hover {
+  background-color: burlywood;
+}
+.calender-container {
+  color: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+/* NAVIGATION */
 .banner-container {
   padding-top: 5%;
   text-align: center;
@@ -32,30 +91,6 @@ header {
   width: 80%;
   height: auto;
 }
-.page-title {
-  padding-top: 50px;
-  color: gold;
-  font-size: 4rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.call-title {
-  text-align: center;
-  padding-top: 0px;
-  color: rgb(255, 255, 255);
-  font-size: 3rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-#cstrFreePlayerDiv {
-  width: 100%;
-}
-.slideshow {
-  width: 100%;
-}
-.dj-flyer {
-  width: 100%;
-}
-/* navbar styles */
-/* nav styles */
 .title {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -123,10 +158,34 @@ header {
   background-color: rgb(177, 9, 9);
   color: wheat;
 }
-
 .hide {
   display: none;
 }
+/* CUSTOM STYLES */
+.page-title {
+  padding-top: 50px;
+  color: gold;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.call-title {
+  text-align: center;
+  padding-top: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cstrFreePlayerDiv {
+  width: 100%;
+}
+.slideshow {
+  width: 100%;
+}
+.dj-flyer {
+  width: 100%;
+}
+/* navbar styles */
+/* nav styles */
 .listen-now {
   margin-left: 2.5%;
   margin-right: 2.5%;
@@ -135,56 +194,6 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   color: white;
-}
-.flex-container {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-.flex-item {
-  padding-top: 5%;
-  text-align: center;
-  width: 30%;
-}
-.flex-requests {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  flex-direction: column;
-
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.request {
-  background-color: goldenrod;
-  border-color: gold;
-  height: 80%;
-  width: 80%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  color: black;
-  cursor: pointer;
-}
-.request:hover {
-  background-color: burlywood;
-}
-.calender-container {
-  color: white;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 .calender-title {
   font-size: 2.4rem;
@@ -240,13 +249,7 @@ header {
   margin-left: 5%;
   margin-right: 5%;
 }
-footer {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  color: white;
-}
+
 .flex-footer {
   display: flex;
   flex-direction: row;
@@ -330,6 +333,12 @@ footer {
     width: 95%;
     height: 400px;
     border: solid 1px #777;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1350px) {
+  .banner-container {
+    padding-top: 10%;
   }
 }
 @media screen and (max-width: 406px) {
