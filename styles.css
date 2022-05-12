@@ -12,6 +12,7 @@ https://jeremy-scheuerman-portfolio.helix5712.com/
 }
 body {
   background-color: black;
+  color: white;
   text-align: center;
 }
 h2 {
@@ -90,8 +91,8 @@ footer {
   display: flex;
   justify-content: center;
   border: 1px solid goldenrod;
-  height: 375px;
-  width: 500px;
+  width: 450px;
+  height: 350px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -103,7 +104,9 @@ footer {
 .slide {
   margin-top: auto;
   margin-bottom: auto;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  /* Max width and Max height ensures they stay within frame */
 }
 /* Fading animation */
 .fade {
@@ -145,7 +148,6 @@ footer {
   position: fixed;
   width: 100%;
 }
-
 .logo {
   font-size: 1.8rem;
   padding-left: 20px;
@@ -181,7 +183,6 @@ footer {
   left: 3%;
   background-color: darkred;
 }
-
 .nav-box {
   display: block;
   text-align: center;
@@ -383,10 +384,10 @@ footer {
     border: solid 1px #777;
   }
   .pic-managers {
-    width: 60%;
+    width: 80%;
   }
   .slideshow-container {
-    width: 100%;
+    width: 300px;
     height: 225px;
   }
   .wide {
@@ -398,17 +399,16 @@ footer {
   }
   /* picture below slideshow */
   .pic-wide {
-    width: 250px;
+    width: 300px;
   }
 }
-
 @media screen and (min-width: 801px) and (max-width: 1350px) {
   /* half window */
   .banner-container {
     padding-top: 10%;
   }
   .slideshow-container {
-    width: 100%;
+    width: 350px;
     height: 225px;
   }
   .pic-wide {
@@ -427,5 +427,21 @@ footer {
   }
   .fb {
     height: 200px;
+  }
+}
+@media print {
+  body {
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  /* Flexbox has bugs on print */
+  .flex-item {
+    width: 45%;
+  }
+  header,
+  .banner-container,
+  .call-title {
+    display: none;
   }
 }
